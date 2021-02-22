@@ -17,4 +17,4 @@ def socket_server_tcp(host, port):
 			conn.send(data)
 
 #EC2 machine port 65001
-socket_server_tcp("", 6500)
+socket_server_tcp("", 3333)
