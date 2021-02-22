@@ -9,4 +9,6 @@ def socket_client_tcp(host, port):
 	print('Received', repr(data))
 
 #EC2 Machine IP
-socket_client_tcp('35.153.194.255', 250)
+#socket_client_tcp('35.153.194.255', 250)
+socket_client_tcp("127.0.0.1", 250)
+#socket_client_tcp("192.168.56.104", 65001)
