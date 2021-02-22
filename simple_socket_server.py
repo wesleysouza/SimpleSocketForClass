@@ -15,6 +15,7 @@ def socket_server_tcp(host, port):
 			print("Dados redebidos!!")
 			print(data)
 			conn.send(data)
+	conn.close()
 
 #EC2 machine port 65001
-socket_server_tcp("", 250)
+socket_server_tcp("", 6500)
