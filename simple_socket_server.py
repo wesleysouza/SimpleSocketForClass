@@ -16,5 +16,5 @@ def socket_server_tcp(host, port):
 			print(data)
 			conn.send(data)
 
-
-socket_server_tcp("", 50007)
+#EC2 machine port 65001
+socket_server_tcp("", 65001)
