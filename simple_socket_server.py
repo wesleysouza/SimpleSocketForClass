@@ -2,7 +2,7 @@ import socket
 
 def socket_server_tcp(host, port):
 	socket_server_tcp = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-	socket_server_tcp.bind(host, port)
+	socket_server_tcp.bind((host, port))
 	socket_server_tcp.listen(1)
 	conn, addr = socket_server_tcp.accept()
 	print('NEW SOCKET', conn)
@@ -16,4 +16,5 @@ def socket_server_tcp(host, port):
 			print(data)
 			conn.send(data)
 
-socket_server_tcp('', 50007)
+
+socket_server_tcp("", 50007)
