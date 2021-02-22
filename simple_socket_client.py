@@ -8,5 +8,5 @@ def socket_client_tcp(host, port):
 	data = socket_client_tcp.recv(1024)
 	print('Received', repr(data))
 
-#Se conectando com o servidor
-socket_client_tcp('127.0.0.1', 50007)
+#EC2 Machine IP
+socket_client_tcp('35.153.194.255', 65001)
